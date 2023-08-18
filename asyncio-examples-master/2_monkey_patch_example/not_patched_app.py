@@ -1,7 +1,9 @@
 import gevent
 import requests
 import timeit
+import datetime
 
+print(datetime.datetime.now())
 
 def make_request(pid):
     requests.get('http://google.com')  # blocking action on the interpreter
