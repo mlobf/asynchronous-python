@@ -22,5 +22,6 @@ def asynchronous():
     gevent.joinall(threads)  # executes threads within the queue
 
 
-print(f'Synchronous: {timeit.timeit(synchronous, number=1)}')
+#print(f'Synchronous: {timeit.timeit(synchronous, number=1)}')
+print('Processo async')
 print(f'Asynchronous: {timeit.timeit(asynchronous, number=1)}')
